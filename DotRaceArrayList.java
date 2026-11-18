@@ -46,6 +46,7 @@ public class DotRaceArrayList extends JPanel {
       int k = 0;
       while (k < racerCount) {
          Dot aDotObject = new Dot(randomName(), k, randomColor(), defaultDiameter);
+         dots.add(aDotObject);
          // FINISH THIS -- insert the Dot object to the dots ArrayList
 
       }
