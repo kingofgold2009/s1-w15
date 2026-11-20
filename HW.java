@@ -34,17 +34,17 @@ public class HW{
     //Uncomment the code below and figure out what should go in each set
     //of underscores.
     public void numGuesser0to100(){
-		// Random r = new Random();
-		// int numGuesses = ______;
-		// int numToGuess =   ______.nextInt(______);
-		// while(______!= ______){
-        //      ______++;
-		// }
-        // System.out.println("Congratulations! " + ______ + " was the correct number! You guessed it in " +  ______  );
-        // if(______ == 1)
-		// 	System.out.print(" try!");
-		// else
-		// 	System.out.print(" tries!");
+		Random r = new Random();
+		int numGuesses = 0;
+		int numToGuess =   r.nextInt(101);
+		while(askForNum()!= numToGuess){
+             numGuesses++;
+		}
+        System.out.println("Congratulations! " + numToGuess + " was the correct number! You guessed it in " +  numGuesses  );
+        if(numGuesses == 1)
+			System.out.print(" try!");
+		else
+			System.out.print(" tries!");
 	}
 
 
