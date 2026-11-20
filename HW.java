@@ -9,8 +9,17 @@ public class HW{
     //For example, “xxxxyzz” should return 3 and “aaaaaaa” should return 3.
     // write a tester that tests various cases : 0 runs, 1 run, etc.
     public int twoRunCounter(String x){
-        return -1;
+    int count = 0;
+    for (i = 0; i <= x.length() - 2; i++){
+    if(x.substring(i, i + 1).equals(x.substring(i + 1, i + 2))){
+        count++;
+        i += 2;
     }
+    else
+        i++;
+    }
+    return count;
+}
 
     //You should use this method in the numGuesser0to100 
     //method below
